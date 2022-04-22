@@ -1,4 +1,4 @@
-const url = 'http://acnhapi.com/v1a/villagers/'
+const url = 'https://acnhapi.com/v1a/villagers/'
 const btn = document.querySelector('#btn')
 const villagerImg = document.querySelector('#villagerImg')
 const villagerName = document.querySelector('#villagerName')
