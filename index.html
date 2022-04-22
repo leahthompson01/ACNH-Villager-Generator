@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Crossing </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;500;700&family=Roboto+Condensed&family=Source+Sans+Pro:wght@400;600&family=Syne+Tactile&display=swap" rel="stylesheet">
+<link href="http://fonts.cdnfonts.com/css/gill-sans" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <!--<svg viewBox="0 0 800 200"> 
+          <path d="M 0 80 Q 400 0 800 80" stroke="black" fill="transparent"/> 
+            <text width="500">
+              <textPath xlink:href="#curve">
+                ACNH Villager Generator
+              </textPath>
+            </text>
+          </svg> -->
+          <svg viewBox="0 0 800 170"> <path id="curve" d="M 0 80 Q 400 0 800 80"  fill="transparent"/> <text x="25"> 
+              <textPath xlink:href="#curve" letter-spacing="15" font-size="40px"> 
+                ACNH Villager Generator
+                </textPath>
+             </text> 
+            </svg>
+          
+        <section id="card" class="shine-me hidden">
+            <div class="top">
+                <h3 id="villagerName"></h3>
+                <div id="birthday"></div>
+            </div>
+            <img src="" id="villagerImg">
+            
+            <div id="species">Species:</div>
+            <div id="personality">Personality:</div>
+            <p id='catchPhrase'>Catch Phrase:</p>
+            <div id='saying'></div>
+        </section>
+        <button class="fixed" id="btn">Click Here</button>
+    </section>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

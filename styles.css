@@ -1,0 +1,161 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+svg {
+    width: 50%;
+    height: 10%;
+}
+body {
+    background-image: url(https://cdn.mos.cms.futurecdn.net/G79YngbW86RJ2QtzFfZEu3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+path {
+    fill: transparent;
+  }
+  
+text {
+    fill: rgb(20, 54, 36);
+    font-size: 38px;
+}
+
+.container {
+
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+.top {
+    display: flex;
+    margin: 0.4em;
+    width: 100%;
+    
+}
+.container #btn {
+    margin: 1.8em auto;
+}
+.container img {
+    align-self: center;
+   margin-bottom: 1.3em;
+   width: 24vw;
+   height: 32vh;
+   border: 3px solid rgb(212, 212, 121);
+   border-radius: 3px;
+   margin: 0 1em;
+
+
+}
+.container > div {
+    padding: 0.8em 0;
+}
+#personality, #species{
+    padding: 0.8em;
+    font-weight: 700;
+    font-size: 32px;
+}
+#catchPhrase{
+    font-size: 32px;
+    align-self: center;
+    border-bottom: 3px solid rgb(212, 212, 121);
+    padding: 0 3em;
+    font-weight: 500;
+}
+#btn {
+    padding: 1.2em 1.7em;
+    font-size: 16px;
+    background-color:rgb(238, 238, 186);
+    border: 3px solid rgb(212, 212, 121);
+    border-radius: 10px;
+    margin-bottom: 40em;
+    font-size: 25px;
+    font-weight: 600;
+}
+#btn:hover {
+    cursor: pointer;
+    padding: 1.2em 1.7em;
+    background-color: hsl(58, 91%, 64%);
+    border-color: hsl(58, 69%, 38%);
+    color: rgb(56, 51, 51);
+    -webkit-transition: background-color 0.3s linear;
+    -ms-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+}
+#saying {
+    Padding-bottom: 3em;
+    align-self: center;
+    font-size: 25px;
+    font-weight: 300;
+    width: 20vw;
+}
+#villagerName {
+    justify-self: flex-start;
+    font-size: 30px;
+}
+#birthday {
+    font-size: 19px;
+    align-self: flex-end;
+  width: 50vw;
+}
+span {
+    padding-left: 0.5em;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+  
+#card{
+  border: 15px solid rgb(212, 212, 121);
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+  border-radius: 15px;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/176622e8-bf4c-4d60-9a64-b75cff245c16/d3inhyi-28e16cb6-9d37-4a6e-bdc6-0d7fcf0af574.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3NjYyMmU4LWJmNGMtNGQ2MC05YTY0LWI3NWNmZjI0NWMxNlwvZDNpbmh5aS0yOGUxNmNiNi05ZDM3LTRhNmUtYmRjNi0wZDdmY2YwYWY1NzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gqQUvb9pdKz_BDtsTqXkpM1_aUHox6IXyveVcugbntg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column; 
+  width: 30vw;
+}
+h3 {
+    margin: 0;
+    padding: 0;
+    width: 90vw;
+  font-size: 30px;
+}
+.hidden {
+    visibility: hidden;
+}
+.fixed{
+    position: absolute;
+    top: 15%;
+}
+.pers,.spec {
+    font-size: 25px;
+}
+@media only screen and (max-width: 600px){
+    #card {
+        width: 90vw;
+      padding: 0 1em;
+    }
+  
+  #saying {
+    width: 70vw;
+    height: 20vw;
+  }
+  .container img {
+    width: 70vw;
+    height: 30vh;
+    
+    
+  }
+  .container {
+      width: 100vw;
+      height: 120vh;
+
+  }
+  
+}
