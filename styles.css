@@ -1,716 +1,657 @@
-* {
-    -webkit-box-sizing: border-box;
+:root {
+    font-size: 62.5%;
+}
+* { 
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    
 }
-svg {
-    width: 50%;
-    height: 10%;
+svg 
+{ 
+    max-width: 80rem;  
+    min-height: 5rem;
+    font-size: 1.5rem;
+    padding-top: 2rem;
 }
-body {
-    background-image: url(https://cdn.mos.cms.futurecdn.net/G79YngbW86RJ2QtzFfZEu3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Futura', "Trebuchet MS", Arial, sans-serif; 
+body 
+{ 
+    background-image: url("https://cdn.mos.cms.futurecdn.net/G79YngbW86RJ2QtzFfZEu3.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
     font-style: normal; 
     font-variant: normal; 
-    line-height: 20px; 
+    line-height: 0.8rem; 
+    width: 100vw;
+    min-height: 100vh;
 }
-path {
-    fill: transparent;
-  }
-  
-text {
-    fill: rgb(20, 54, 36);
-    font-size: 38px;
+path { fill: transparent; }
+text { fill: rgb(20, 54, 36); font-size: 3em; }
+.container 
+{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    max-width: 100vw; 
+    max-height: 100vh; 
 }
-
-.container {
-
-    display: flex;
-
-    flex-direction: column;
+.top 
+{ 
+    display: flex; 
+    justify-content: space-between;
     align-items: center;
-    max-width: 100vw;
+    padding-top: 0.8rem;
+}
+.container #btn 
+{ 
+    margin: 1.8em auto; 
+}
+.container img 
+{ align-self: center;
+  width: 18rem; 
+  height: 22rem; 
+  border: 0.8em solid rgb(212, 212, 121); 
+  border-radius: 0.8em; 
+  margin:1em; }
+.container > div 
+{ 
+    padding: 0.8em 0px;
+}
+#personality, #species 
+{ 
+    padding: 1.6rem; 
+    font-weight: 500; 
+    font-size: 2rem; 
+    margin: 0; 
+}
+.pers,.spec 
+{ 
+    font-weight: 300; 
+    font-size: 0.8rem;
+    line-height: 0.2em;
+
+}
+#btn { 
+    padding: 1.7rem 2.28rem; 
+    background-color: rgb(238, 238, 186); 
+    border: 3px solid rgb(212, 212, 121); 
+    border-radius: 10px; 
+    /* margin-bottom: 5rem;  */
+    font-size: 4rem; 
+    font-weight: 600; 
+}
+#btn:hover 
+{ 
+    cursor: pointer;  
+    background-color: rgb(247, 241, 80); 
+    border-color: rgb(164, 159, 30); 
+    color: rgb(56, 51, 51); 
+    transition: background-color 0.3s linear 0s;
+}
+#catchPhrase 
+{ 
+    font-size: 4rem; 
+    align-self: center; 
+    border-bottom: 3px solid rgb(212, 212, 121); 
+    padding: 0px 2em 0.5em; 
+    font-weight: 500; 
+}
+#saying 
+{ 
+    padding-bottom: 3em;
+    align-self: center;
+    font-size: 2.5rem; 
+    font-weight: 300; 
+    line-height: 1.5em;
+    width: 70%; 
+}
+#villagerName 
+{ 
+    justify-self: flex-start; 
+    font-size: 2.4rem; }
+#birthday { 
+    font-size: 1.8rem; 
+    justify-self: flex-end; 
+}
+span 
+{ 
+    padding-left: 0.5em; 
+    font-size: 1.5rem; 
+    font-weight: 500; 
+}
+#card 
+{ border: 15px solid rgb(212, 212, 121); 
+    box-shadow: rgb(0, 0, 0) -10px 0px 13px -7px, rgb(0, 0, 0) 10px 0px 13px -7px, rgba(0, 0, 0, 0) 5px 5px 15px 5px; 
+    border-radius: 15px; 
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/176622e8-bf4c-4d60-9a64-b75cff245c16/d3inhyi-28e16cb6-9d37-4a6e-bdc6-0d7fcf0af574.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3NjYyMmU4LWJmNGMtNGQ2MC05YTY0LWI3NWNmZjI0NWMxNlwvZDNpbmh5aS0yOGUxNmNiNi05ZDM3LTRhNmUtYmRjNi0wZDdmY2YwYWY1NzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gqQUvb9pdKz_BDtsTqXkpM1_aUHox6IXyveVcugbntg"); 
+    background-size: cover; 
+    display: flex; 
+    flex-direction: column; 
+    width: 22vw; 
+    height: 60vh; 
+}
+h3 
+{ 
+    margin: 0; 
+    padding: 0; 
+    font-size: 1.3rem; 
+}
+.hidden 
+{ 
+    visibility: hidden; 
+}
+.fixed 
+{ 
+    position: absolute; 
+    top: 15%; 
+}
+
+@media only screen and (max-width: 600px) {
+  *{
+    margin: 0;
+  }
+  svg{
+      height: 8rem;
+  }
+  body{
     max-height: 100vh;
+    background-image: url(https://w0.peakpx.com/wallpaper/514/507/HD-wallpaper-animal-crossing.jpg)
+  }
+  #card { 
+    width: 75%; 
+    padding: 0 0.2em; 
+    height: auto; 
+    margin-top: 2rem;
+    margin-bottom: 0em; 
 }
-.top {
-    display: flex;
-    margin: 0.4em;
-    width: 100%;
-    
-}
-.container #btn {
-    margin: 1.8em auto;
-}
-.container img {
-    align-self: center;
-   margin-bottom: 1.3em;
-   width: 18vw;
-   height: 22vh;
-   border: 3px solid rgb(212, 212, 121);
-   border-radius: 3px;
-   margin: 0 1em;
-
-
-}
-.container > div {
-    padding: 0.8em 0;
-}
-#personality, #species{
-    padding: 0.3em;
+  #catchPhrase {
+    font-size: 1.8rem;
     font-weight: 500;
-    font-size: 26px;
-    margin: 0;
-}
-.pers,.spec {
-    font-weight: 300;
-}
-
-#btn {
+  }
+  #btn :hover{
     padding: 0.6em 0.8em;
-    background-color:rgb(238, 238, 186);
-    border: 3px solid rgb(212, 212, 121);
-    border-radius: 10px;
-    margin-bottom: 20em;
-    font-size: 23px;
-    font-weight: 600;
+  }
+  #saying { width: 78%; 
+    height: auto; 
+    font-size: 1.4rem; 
+    padding-top: 1rem; 
 }
-#btn:hover {
-    cursor: pointer;
-    padding: 0.7em 0.9em;
-    background-color: hsl(58, 91%, 64%);
-    border-color: hsl(58, 69%, 38%);
-    color: rgb(56, 51, 51);
-    -webkit-transition: background-color 0.3s linear;
-    -ms-transition: background-color 0.3s linear;
-    transition: background-color 0.3s linear;
+  .container img { 
+    width: 22rem; 
+    height: auto; 
 }
-#catchPhrase{
-    font-size: 32px;
-    align-self: center;
-    border-bottom: 3px solid rgb(212, 212, 121);
-    padding: 0 2em 0.5em 2em;
-    font-weight: 500;
-}
-#saying {
-    Padding-bottom: 3em;
-    align-self: center;
-    font-size: 25px;
-    font-weight: 300;
-    width: 17vw;
-}
-#villagerName {
-    justify-self: flex-start;
-    font-size: 30px;
-}
-#birthday {
-    font-size: 19px;
-    align-self: flex-end;
-  width: 50vw;
-}
-span {
-    padding-left: 0.5em;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-  
-#card{
-  border: 15px solid rgb(212, 212, 121);
-  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-
-  border-radius: 15px;
-  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/176622e8-bf4c-4d60-9a64-b75cff245c16/d3inhyi-28e16cb6-9d37-4a6e-bdc6-0d7fcf0af574.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3NjYyMmU4LWJmNGMtNGQ2MC05YTY0LWI3NWNmZjI0NWMxNlwvZDNpbmh5aS0yOGUxNmNiNi05ZDM3LTRhNmUtYmRjNi0wZDdmY2YwYWY1NzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gqQUvb9pdKz_BDtsTqXkpM1_aUHox6IXyveVcugbntg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column; 
-  width: 22vw;
-  height: 60vh;
-}
-h3 {
-    margin: 0;
-    padding: 0;
-    width: 90vw;
-  font-size: 30px;
-}
-.hidden {
-    visibility: hidden;
-}
-.fixed{
-    position: absolute;
-    top: 15%;
-}
-.pers,.spec {
-    font-size: 25px;
-}
-
-/* ----------------Media Queries ----------------- */
-@media only screen and (max-width: 600px){
- 
-    #card {
-        width: 80vw;
-      padding: 0 2em;
-      height: 70vh;
+  .container { 
+      max-width: 100vw; 
+      max-height: 100vh; 
     }
-  
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 70vw;
-    height: 90vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  #species,#personality {
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-    width: 10vw;
-    height: 10vh;
-}
-.spec,.pers {
+  #species, #personality { 
+      padding: 0; 
+      margin: 0; 
+      font-size: 1.4rem; 
+      font-weight: 600; 
+      width: 10vw; 
+      height: 5vh; 
+    }
+  .spec, .pers { 
+      font-weight: 400; 
+      font-size: 1.4rem; 
+    }
+  #btn { 
+      margin:0;
+      font-size: 1.4rem; 
+    }
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
     font-weight: 400;
-    font-size: 18px;
-}
+  }
+  #birthday {
+    font-size: 1.2em;
+  }
   
 }
-/*
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .container {
-        width: 300vw;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    *{
+        margin: 0;
+      }
+      body{
+        max-width: 100%;
+        max-height: 100%;
+        background-image: url(https://w0.peakpx.com/wallpaper/514/507/HD-wallpaper-animal-crossing.jpg)
+      }
+      #card { 
+        width: 75%; 
+        padding: 0 0.2em; 
+        height: auto; 
+        margin-top: 2rem;
+        margin-bottom: 0em; 
     }
-    #card {
-        width: 90vw;
-      padding: 0 1em;
-      height: 70vh;
+      #catchPhrase {
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+      #btn :hover{
+        padding: 0.6em 0.8em;
+      }
+      #saying { width: 78%; 
+        height: auto; 
+        font-size: 1.4rem; 
+        padding-top: 1rem; 
     }
-  
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  svg {
-      font-size: 40px;
-  }
+      .container img { 
+        width: 22rem; 
+        height: auto; 
+    }
+      .container { 
+          max-width: 100vw; 
+          max-height: 100vh; 
+        }
+      #species, #personality { 
+        padding-right: 1rem;
+          font-size: 1.4rem; 
+          font-weight: 600; 
+          width: 10vw; 
+          height: 5vh; 
+        }
+      .spec, .pers { 
+          font-weight: 400; 
+          font-size: 1.4rem; 
+        }
+      #btn { 
+          margin:0;
+          font-size: 1.4rem; 
+        }
+      h3 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        font-weight: 400;
+      }
+      #birthday {
+        font-size: 1.2em;
+      }
+      
 }
-*/
-/* Portrait */
-/*
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    #card {
-        width: 40vw;
-      padding: 0 1em;
-      height: 40vh;
+/* Medium devices (landscape tablets, 768px and up) */
+/* Ipad Air/ Mini */
+@media only screen and (min-width: 768px) {
+    *{
+        margin: 0;
     }
+    body{
+        max-width: 100vw;
+        max-height: 100vh;
+        background-image: url(https://w0.peakpx.com/wallpaper/514/507/HD-wallpaper-animal-crossing.jpg)
+    }
+    #card { 
+      width: 50%; 
+      padding: 0 0.2em; 
+      height: auto; 
+      margin-bottom: 0em; 
+    }
+    #catchPhrase {
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+    #btn { 
+        margin:0; 
+        font-size: 2rem;
+        padding: 2rem;
+    }
+      #btn :hover{
+        padding: 0.6em 0.8em;
+      }
+      #saying { 
+        width: 70%; 
+        height: auto; 
+        font-size: 2.5rem; 
+        padding-top: 1em; 
+    }
+      .container img { 
+        width: 30rem; 
+        height: 25rem; 
+    }
+      .container { 
+          max-width: 100vw; 
+          max-height: 100vh; 
+        }
+      #species, #personality { 
+          padding-right: 1rem; 
+          margin: 0; 
+          font-size: 2.4rem; 
+          font-weight: 600; 
+          width: 10vw; 
+          height: 5vh; 
+        }
+      .spec, .pers { 
+          font-weight: 400; 
+          font-size: 2.2rem; 
+        }
+      h3 {
+        width: 6em;
+        font-size: 0.2em;
+        line-height: 0.5em;
+        font-weight: 400;
+      }
+      #birthday {
+        font-size: 1.5rem;
+      }
+     
 }
-*/
-/* Landscape */
-/*
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-*/
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-/*
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .container {
-        width: 300vw;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    :root {
+        font-size: 62.5%;
     }
-    #card {
-        width: 40vw;
-      padding: 0 1em;
-      height: 40vh;
-    }
-  
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  svg {
-      font-size: 40px;
-  }
-}
-*/
-/* Portrait */
-/*
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    .container {
-        width: 300vw;
-    }
-    #card {
-        width: 40vw;
-      padding: 0 1em;
-      height: 40vh;
-    }
-  
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  svg {
-      font-size: 40px;
-  }
-  #btn {
-    margin: 0;
-}
-}
-*/
-/* Landscape */ 
-/*
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    .container {
-        width: 300vw;
-    }
-    #card {
-        width: 90vw;
-      padding: 0 1em;
-      height: 70vh;
+    * { 
+        box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;
     }
   
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  svg {
-      font-size: 40px;
-  }
-
-}
-*/
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-/*
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-    .container {
-        width: 300vw;
+    body 
+    { 
+        background-image: url("https://cdn.mos.cms.futurecdn.net/G79YngbW86RJ2QtzFfZEu3.jpg"); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+        font-style: normal; 
+        font-variant: normal; 
+        line-height: 0.8em; 
+        max-height: 100vh;
     }
-    #card {
-        width: 90vw;
-      padding: 0 1em;
-      height: 70vh;
+    path { fill: transparent; }
+    text { fill: rgb(20, 54, 36); font-size: 3em; }
+    .container 
+    { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 100vw; 
+        max-height: 100vh; 
     }
-  
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  svg {
-      font-size: 40px;
-  }
-  #btn {
-    margin: 0;
-}
-}
-*/
-/* Portrait */
-/*
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
-}
-*/
-/* Landscape */
-/*
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-    .container {
-        width: 300vw;
+    .top 
+    { 
+        display: flex; 
+        margin: 0.4em; 
+        width: 100%;
+     }
+    .container #btn 
+    { 
+        margin: 1.8em auto; 
     }
-    #card {
-        width: 90vw;
-      padding: 0 1em;
-      height: 70vh;
+    .container img 
+    { 
+      align-self: center;
+      max-width: 30rem; 
+      max-height: 34rem; 
+      border: 0.8em solid rgb(212, 212, 121); 
+      border-radius: 0.8em; 
+      margin:1em; 
     }
-  
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 100vh;
-      max-width: 100%;
-
-  }
-  svg {
-      font-size: 40px;
-  }
-  #btn {
-    margin: 0;
-}
-}
-*/
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-/*
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    .container {
-        width: 300vw;
+    .container > div 
+    { 
+        padding: 0.8em 0px;
     }
-    #card {
-        width: 90vw;
-      padding: 0 1em;
-      height: 70vh;
+    #personality, #species 
+    {  
+        font-weight: 500; 
+        font-size: 2rem; 
+        margin: 0px; 
+    }
+    .pers,.spec 
+    { 
+        font-weight: 300; 
+        font-size: 0.8rem;
+        line-height: 0.2em;
+    
+    }
+    #btn 
+    { 
+        padding: 1.7rem 2.28rem; 
+        background-color: rgb(238, 238, 186); 
+        border: 3px solid rgb(212, 212, 121); 
+        border-radius: 10px; 
+        /* margin-bottom: 5rem;  */
+        font-size: 2rem; 
+        font-weight: 600; 
+    }
+    #btn:hover 
+    { 
+        cursor: pointer;  
+        background-color: rgb(247, 241, 80); 
+        border-color: rgb(164, 159, 30); 
+        color: rgb(56, 51, 51); 
+        transition: background-color 0.3s linear 0s;
+    }
+    #catchPhrase 
+    { 
+        font-size: 3rem; 
+        align-self: center; 
+        border-bottom: 3px solid rgb(212, 212, 121); 
+        padding: 0px 2em 0.5em; 
+        font-weight: 500; 
+    }
+    #saying 
+    { 
+        padding-bottom: 3em;
+        align-self: center;
+        font-size: 2.5rem; 
+        font-weight: 300; 
+        line-height: 1.5em;
+        width: 70%; 
+    }
+    #villagerName 
+    { 
+        justify-self: flex-start; 
+        font-size: 2.4rem; 
+    }
+    #birthday { 
+        font-size: 1.8rem; 
+        align-self: flex-end; 
+        width: 50rem; 
+        line-height: 2rem;
+    }
+    span 
+    { 
+        padding-left: 0.5em; 
+        font-size: 1.5rem; 
+        font-weight: 500; 
+    }
+    #card 
+    { border: 15px solid rgb(212, 212, 121); 
+        box-shadow: rgb(0, 0, 0) -10px 0px 13px -7px, rgb(0, 0, 0) 10px 0px 13px -7px, rgba(0, 0, 0, 0) 5px 5px 15px 5px; 
+        border-radius: 15px; 
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/176622e8-bf4c-4d60-9a64-b75cff245c16/d3inhyi-28e16cb6-9d37-4a6e-bdc6-0d7fcf0af574.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3NjYyMmU4LWJmNGMtNGQ2MC05YTY0LWI3NWNmZjI0NWMxNlwvZDNpbmh5aS0yOGUxNmNiNi05ZDM3LTRhNmUtYmRjNi0wZDdmY2YwYWY1NzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gqQUvb9pdKz_BDtsTqXkpM1_aUHox6IXyveVcugbntg"); 
+        background-size: cover; 
+        display: flex; 
+        flex-direction: column; 
+        max-width: 40%;
+        min-height: 40%;
     }
   
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  .curve {
-    font-size: 80px;
-}
-#btn {
-    margin: 0;
-}
-}
-*/
-/* Portrait */
-/*
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-    .container {
-        width: 300vw;
+    h3 
+    { 
+        margin: 0; 
+        padding: 0; 
+        width: 90vw; 
+        font-size: 1.3rem; 
     }
-    #card {
-        width: 90vw;
-      padding: 0 1em;
-      height: 70vh;
+    .hidden 
+    { 
+        visibility: hidden; 
     }
-  
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  .curve {
-    font-size: 80px;
-}
-#btn {
-    margin: 0;
-}
-}
-*/
-/* Landscape */
-/*
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-    .container {
-        width: 300vw;
+    .fixed 
+    { 
+        position: absolute; 
+        top: 15%; 
     }
-    #card {
-        width: 90vw;
-      padding: 0 1em;
-      height: 70vh;
+    svg 
+    { 
+
+        font-size: 1rem;
+        min-height: 10rem;
+    }   
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    :root {
+        font-size: 62.5%;
     }
-  
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  .curve {
-    font-size: 80px;
-}
-#btn {
-    margin: 0;
-}
-}
-*/
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-    #card {
-        width: 92vw;
-      height: 60vh;
+    * { 
+        box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;
     }
-  
-  #saying {
-    width: 60vw;
-    height: 10vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
     
-  }
-  #btn {
-      margin: 0;
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  .curve {
-    font-size: 80px;
-}
-#species,#personality {
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-    width: 10vw;
-    height: 10vh;
-}
-.spec,.pers {
-    font-weight: 400;
-    font-size: 18px;
-}
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-    .container {
-        width: 300vw;
+    body 
+    { 
+        background-image: url("https://cdn.mos.cms.futurecdn.net/G79YngbW86RJ2QtzFfZEu3.jpg"); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+        font-style: normal; 
+        font-variant: normal; 
+        line-height: 0.8em; 
+        -webkit-background-size: cover; 
+        -moz-background-size: cover;
+        max-height: 100vh;
     }
-    #card {
-        width: 90vw;
-      padding: 0 1em;
-      height: 70vh;
+    path { fill: transparent; }
+    text { fill: rgb(20, 54, 36); font-size: 3em; }
+    .container 
+    { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 100vw; 
+        max-height: 100vh; 
     }
-  
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
-
-  }
-  #species,#personality {
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-    width: 10vw;
-    height: 10vh;
-}
-.spec,.pers {
-    font-weight: 400;
-    font-size: 18px;
-}
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-    .container {
-        width: 300vw;
-        height: 100vh;
+    .top 
+    { 
+        display: flex; 
+        margin: 0.4em; 
+        width: 100%;
+     }
+    .container #btn 
+    { 
+        margin: 1.8em auto; 
     }
-    #card {
-        width: 90vw;
-      padding: 0 1em;
-      height: 70vh;
+    .container img 
+    { 
+      align-self: center;
+      width: 30rem; 
+      height: 34rem; 
+      border: 0.8em solid rgb(212, 212, 121); 
+      border-radius: 0.8em; 
+      margin:1em; 
     }
-  
-  #saying {
-    width: 70vw;
-    height: 20vw;
-  }
-  .container img {
-    width: 60vw;
-    height: 15vh;
-    
-    
-  }
-  .container {
-      width: 100vw;
-      height: 120vh;
-      background-size: 300vw;
+    .container > div 
+    { 
+        padding: 0.8em 0px;
+    }
+    #personality, #species 
+    { 
+        padding: 0.3em; 
+        font-weight: 500; 
+        font-size: 2rem; 
+        margin: 0px; 
+    }
+    .pers,.spec 
+    { 
+        font-weight: 300; 
+        line-height: 0.2em;
+        padding-left: 0.5rem; 
+        font-size: 2rem; 
+        font-weight: 500; 
 
-  }
-#btn {
-    margin: 0;
-}
-#species,#personality {
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-    font-weight: 600;
-    width: 10vw;
-    height: 10vh;
-}
-.spec,.pers {
-    font-weight: 400;
-    font-size: 18px;
-}
+    
+    }
+    #btn 
+    { 
+        padding: 1.7rem 2.28rem; 
+        background-color: rgb(238, 238, 186); 
+        border: 3px solid rgb(212, 212, 121); 
+        border-radius: 10px; 
+        /* margin-bottom: 5rem;  */
+        font-size: 4rem; 
+        font-weight: 600; 
+    }
+    #btn:hover 
+    { 
+        cursor: pointer;  
+        background-color: rgb(247, 241, 80); 
+        border-color: rgb(164, 159, 30); 
+        color: rgb(56, 51, 51); 
+        transition: background-color 0.3s linear 0s;
+    }
+    #catchPhrase 
+    { 
+        font-size: 2.4rem; 
+        align-self: center; 
+        border-bottom: 3px solid rgb(212, 212, 121); 
+        padding: 0px 2em 0.5em; 
+        font-weight: 500; 
+        margin-top: 4rem;
+    }
+    #saying 
+    { 
+        padding-bottom: 3em;
+        align-self: center;
+        font-size: 2rem; 
+        font-weight: 300; 
+        line-height: 1.5em;
+        width: 100%; 
+        padding: 0 2.2rem;
+        margin-bottom: 1rem;
+    }
+    #villagerName 
+    { 
+        justify-self: flex-start; 
+        font-size: 2.4rem; 
+    }
+    #birthday { 
+        font-size: 1.8rem; 
+        align-self: flex-end; 
+        width: 50rem; 
+        line-height: 2rem;
+    }
+    
+    #card 
+    { border: 15px solid rgb(212, 212, 121); 
+        box-shadow: rgb(0, 0, 0) -10px 0px 13px -7px, rgb(0, 0, 0) 10px 0px 13px -7px, rgba(0, 0, 0, 0) 5px 5px 15px 5px; 
+        border-radius: 15px; 
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/176622e8-bf4c-4d60-9a64-b75cff245c16/d3inhyi-28e16cb6-9d37-4a6e-bdc6-0d7fcf0af574.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3NjYyMmU4LWJmNGMtNGQ2MC05YTY0LWI3NWNmZjI0NWMxNlwvZDNpbmh5aS0yOGUxNmNiNi05ZDM3LTRhNmUtYmRjNi0wZDdmY2YwYWY1NzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gqQUvb9pdKz_BDtsTqXkpM1_aUHox6IXyveVcugbntg"); 
+        background-size: cover; 
+        background-repeat: no-repeat;
+        display: flex; 
+        flex-direction: column; 
+        width: 37rem; 
+        min-height: 60rem; 
+        -webkit-background-size: cover; 
+        -moz-background-size: cover;
+        /* background image: background: url(...) no-repeat center center fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; */
+    }
+    h3 
+    { 
+        margin: 0; 
+        padding: 0; 
+        width: 90vw; 
+        font-size: 1.3rem; 
+    }
+    .hidden 
+    { 
+        visibility: hidden; 
+    }
+    .fixed 
+    { 
+        position: absolute; 
+        top: 15%; 
+    }
+    svg 
+    { 
+        min-height: 10rem;
+        font-size: 1.5rem;
+    }
+    
 }
